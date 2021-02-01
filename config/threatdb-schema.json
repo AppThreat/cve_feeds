@@ -1,0 +1,432 @@
+[
+  {
+    "description": "bq-datetime",
+    "mode": "NULLABLE",
+    "name": "lastModifiedDate",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "userInteractionRequired",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "obtainOtherPrivilege",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "obtainUserPrivilege",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "obtainAllPrivilege",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "acInsufInfo",
+            "type": "BOOLEAN"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "impactScore",
+            "type": "FLOAT"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "severity",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "exploitabilityScore",
+            "type": "FLOAT"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "baseScore",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "integrityImpact",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "authentication",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "accessComplexity",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "accessVector",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "availabilityImpact",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "vectorString",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "confidentialityImpact",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "version",
+                "type": "FLOAT"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "cvssV2",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "baseMetricV2",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "exploitabilityScore",
+            "type": "FLOAT"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "impactScore",
+            "type": "FLOAT"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "baseSeverity",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "scope",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "baseScore",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "version",
+                "type": "FLOAT"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "integrityImpact",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "availabilityImpact",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "privilegesRequired",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "userInteraction",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "attackComplexity",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "confidentialityImpact",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "attackVector",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "vectorString",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "cvssV3",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "baseMetricV3",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "impact",
+    "type": "RECORD"
+  },
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "versionEndIncluding",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "versionStartIncluding",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "versionEndExcluding",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "cpe23Uri",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "vulnerable",
+                "type": "BOOLEAN"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "cpe_match",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "versionEndIncluding",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "versionStartIncluding",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "versionEndExcluding",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "cpe23Uri",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "vulnerable",
+                    "type": "BOOLEAN"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "cpe_match",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "operator",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "children",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "operator",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "nodes",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "CVE_data_version",
+        "type": "FLOAT"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "configurations",
+    "type": "RECORD"
+  },
+  {
+    "description": "bq-datetime",
+    "mode": "NULLABLE",
+    "name": "publishedDate",
+    "type": "TIMESTAMP"
+  },
+  {
+    "fields": [
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "ASSIGNER",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "ID",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "CVE_data_meta",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "data_version",
+        "type": "FLOAT"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "value",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "lang",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "description",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "problemtype_data",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "problemtype",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "lang",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "description_data",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "description",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "refsource",
+                "type": "STRING"
+              },
+              {
+                "mode": "REPEATED",
+                "name": "tags",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "url",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "reference_data",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "references",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "data_format",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "data_type",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "cve",
+    "type": "RECORD"
+  }
+]

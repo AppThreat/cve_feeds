@@ -1,0 +1,27 @@
+name: daily_download
+
+on:
+  pull_request:
+    branches:
+    - master
+  schedule:
+  - cron: "0 */1 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Download feeds
+      run: |
+        bash load_refs.sh
+        bash load_modified.sh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+    - name: Push to master
+      uses: tcitry/push-to-master@v1.0
+      with:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

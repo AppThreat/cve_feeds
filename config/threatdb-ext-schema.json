@@ -1,0 +1,589 @@
+[
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE", 
+        "name": "url", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "name", 
+        "type": "STRING"
+      }
+    ], 
+    "mode": "REPEATED", 
+    "name": "d2sec", 
+    "type": "RECORD"
+  }, 
+  {
+    "fields": [
+      {
+        "mode": "REPEATED", 
+        "name": "sunalert", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "jvndb", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "conectiva", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "idefense", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "turbo", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "sgi", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "openpkg", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "mskb", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "ubuntu", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "netbsd", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "aixapar", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "debian", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "iss", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "fedora", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "jvn", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "bid", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "exploit_db", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "immunix", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "sectrack", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "mlist", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "ms", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "cert_vn", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "mandriva", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "gentoo", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "sreason", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "vim", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "vupen", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "confirm", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "vuln_dev", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "osvdb", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "suse", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "misc", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "trustix", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "mandrake", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "cisco", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "cert", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "xf", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "vulnwatch", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "hp", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "slackware", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "fulldisc", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "secunia", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "caldera", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "apple", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "REPEATED", 
+        "name": "bugtraq", 
+        "type": "STRING"
+      }
+    ], 
+    "mode": "NULLABLE", 
+    "name": "refmap", 
+    "type": "RECORD"
+  }, 
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE", 
+        "name": "title", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "bq-datetime", 
+        "mode": "NULLABLE", 
+        "name": "accepted", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE", 
+            "name": "name", 
+            "type": "STRING"
+          }, 
+          {
+            "mode": "NULLABLE", 
+            "name": "organization", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "contributors", 
+        "type": "RECORD"
+      }, 
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE", 
+            "name": "oval", 
+            "type": "STRING"
+          }, 
+          {
+            "mode": "NULLABLE", 
+            "name": "comment", 
+            "type": "STRING"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "definition_extensions", 
+        "type": "RECORD"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "family", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "id", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "description", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "bq-datetime", 
+        "mode": "NULLABLE", 
+        "name": "submitted", 
+        "type": "TIMESTAMP"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "class", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "version", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "status", 
+        "type": "STRING"
+      }
+    ], 
+    "mode": "REPEATED", 
+    "name": "oval", 
+    "type": "RECORD"
+  }, 
+  {
+    "fields": [
+      {
+        "mode": "REPEATED", 
+        "name": "rpms", 
+        "type": "STRING"
+      }, 
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE", 
+                "name": "id", 
+                "type": "INTEGER"
+              }, 
+              {
+                "mode": "NULLABLE", 
+                "name": "title", 
+                "type": "STRING"
+              }
+            ], 
+            "mode": "NULLABLE", 
+            "name": "bugzilla", 
+            "type": "RECORD"
+          }, 
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE", 
+                    "name": "oval", 
+                    "type": "STRING"
+                  }, 
+                  {
+                    "mode": "NULLABLE", 
+                    "name": "comment", 
+                    "type": "STRING"
+                  }, 
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE", 
+                        "name": "oval", 
+                        "type": "STRING"
+                      }, 
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE", 
+                            "name": "oval", 
+                            "type": "STRING"
+                          }, 
+                          {
+                            "mode": "NULLABLE", 
+                            "name": "comment", 
+                            "type": "STRING"
+                          }
+                        ], 
+                        "mode": "REPEATED", 
+                        "name": "AND", 
+                        "type": "RECORD"
+                      }, 
+                      {
+                        "mode": "NULLABLE", 
+                        "name": "comment", 
+                        "type": "STRING"
+                      }
+                    ], 
+                    "mode": "REPEATED", 
+                    "name": "OR", 
+                    "type": "RECORD"
+                  }
+                ], 
+                "mode": "REPEATED", 
+                "name": "AND", 
+                "type": "RECORD"
+              }, 
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE", 
+                        "name": "oval", 
+                        "type": "STRING"
+                      }, 
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE", 
+                            "name": "oval", 
+                            "type": "STRING"
+                          }, 
+                          {
+                            "fields": [
+                              {
+                                "mode": "NULLABLE", 
+                                "name": "oval", 
+                                "type": "STRING"
+                              }, 
+                              {
+                                "mode": "NULLABLE", 
+                                "name": "comment", 
+                                "type": "STRING"
+                              }
+                            ], 
+                            "mode": "REPEATED", 
+                            "name": "AND", 
+                            "type": "RECORD"
+                          }, 
+                          {
+                            "mode": "NULLABLE", 
+                            "name": "comment", 
+                            "type": "STRING"
+                          }
+                        ], 
+                        "mode": "REPEATED", 
+                        "name": "OR", 
+                        "type": "RECORD"
+                      }, 
+                      {
+                        "mode": "NULLABLE", 
+                        "name": "comment", 
+                        "type": "STRING"
+                      }
+                    ], 
+                    "mode": "REPEATED", 
+                    "name": "AND", 
+                    "type": "RECORD"
+                  }
+                ], 
+                "mode": "REPEATED", 
+                "name": "OR", 
+                "type": "RECORD"
+              }
+            ], 
+            "mode": "NULLABLE", 
+            "name": "oval", 
+            "type": "RECORD"
+          }, 
+          {
+            "fields": [
+              {
+                "description": "%E4Y-%m-%d", 
+                "mode": "NULLABLE", 
+                "name": "released", 
+                "type": "DATE"
+              }, 
+              {
+                "mode": "NULLABLE", 
+                "name": "title", 
+                "type": "STRING"
+              }, 
+              {
+                "mode": "NULLABLE", 
+                "name": "severity", 
+                "type": "STRING"
+              }, 
+              {
+                "mode": "NULLABLE", 
+                "name": "id", 
+                "type": "STRING"
+              }
+            ], 
+            "mode": "NULLABLE", 
+            "name": "rhsa", 
+            "type": "RECORD"
+          }
+        ], 
+        "mode": "REPEATED", 
+        "name": "advisories", 
+        "type": "RECORD"
+      }
+    ], 
+    "mode": "NULLABLE", 
+    "name": "redhat", 
+    "type": "RECORD"
+  }, 
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE", 
+        "name": "id", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "description", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "bid", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "osvdb", 
+        "type": "INTEGER"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "title", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "type", 
+        "type": "STRING"
+      }
+    ], 
+    "mode": "REPEATED", 
+    "name": "saint", 
+    "type": "RECORD"
+  }, 
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE", 
+        "name": "statement", 
+        "type": "STRING"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "contributor", 
+        "type": "STRING"
+      }, 
+      {
+        "description": "%E4Y-%m-%d", 
+        "mode": "NULLABLE", 
+        "name": "lastmodified", 
+        "type": "DATE"
+      }, 
+      {
+        "mode": "NULLABLE", 
+        "name": "organization", 
+        "type": "STRING"
+      }
+    ], 
+    "mode": "REPEATED", 
+    "name": "statements", 
+    "type": "RECORD"
+  }, 
+  {
+    "mode": "NULLABLE", 
+    "name": "id", 
+    "type": "STRING"
+  }
+]

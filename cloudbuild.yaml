@@ -1,0 +1,13 @@
+steps:
+- name: gcr.io/cloud-builders/gsutil
+  args: ['-m', 'cp', '*.json', 'gs://cve_feeds/']
+- name: gcr.io/$PROJECT_ID/bq
+  args: ['load', '--replace', '--ignore_unknown_values', '--schema', './config/threatdb-ext-schema.json', '--source_format=NEWLINE_DELIMITED_JSON', 'threatdb.ext_refs', 'gs://cve_feeds/via4-l.json']
+- name: gcr.io/$PROJECT_ID/bq
+  args: ['load', '--replace', '--ignore_unknown_values', '--schema', './config/threatdb-schema.json', '--source_format=NEWLINE_DELIMITED_JSON', 'threatdb.recent', 'gs://cve_feeds/nvdcve-1.1-recent-l.json']
+- name: gcr.io/$PROJECT_ID/bq
+  args: ['load', '--ignore_unknown_values', '--schema', './config/threatdb-schema.json', '--source_format=NEWLINE_DELIMITED_JSON', 'threatdb.recent', 'gs://cve_feeds/ghsa-l.json']
+- name: gcr.io/$PROJECT_ID/bq
+  args: ['load', '--ignore_unknown_values', '--schema', './config/threatdb-schema.json', '--source_format=NEWLINE_DELIMITED_JSON', 'threatdb.all', 'gs://cve_feeds/nvdcve-1.1-modified-l.json']
+
+timeout: 1200s

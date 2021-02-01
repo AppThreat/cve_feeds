@@ -1,0 +1,27 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "ID",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "appthreat_tags",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "appthreat_description",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "related_threats",
+    "type": "STRING"
+  },
+  {
+    "mode": "REPEATED",
+    "name": "related_products",
+    "type": "STRING"
+  }
+]
